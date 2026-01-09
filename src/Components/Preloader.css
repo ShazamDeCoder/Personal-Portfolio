@@ -1,100 +1,48 @@
-.loader {
-  height: 100vh;
+
+.loading {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background: black;
-  font-family: "Poppins", sans-serif;
+  align-items: center;
+  height: 100vh;
+  gap: 6px;
 }
 
-.logo-wrapper {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 1rem;
+.loading span {
+  width: 4px;
+  height: 50px;
+  background: red;
+  animation: scale 0.9s ease-in-out infinite;
 }
 
-.logo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  z-index: 2;
-  position: relative;
+.loading span:nth-child(2) {
+  background: white;
+  animation-delay: -0.8s;
 }
 
-.circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 3px solid green;
-  border-radius: 50%;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  animation: rotate 1.5s linear infinite;
-  z-index: 1;
+.loading span:nth-child(3) {
+  background: red;
+  animation-delay: -0.7s;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
+.loading span:nth-child(4) {
+  background: white;
+  animation-delay: -0.6s;
+}
+
+.loading span:nth-child(5) {
+  background: red;
+  animation-delay: -0.5s;
+}
+
+@keyframes scale {
+
+  0%,
+  40%,
   100% {
-    transform: rotate(360deg);
+    transform: scaleY(0.1);
   }
-}
 
-.brand {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.tagline {
-  color: #777;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.progress-bar {
-  width: 250px;
-  height: 4px;
-  background-color: #e0e0e0;
-  border-radius: 2px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.progress-fill {
-  height: 100%;
-  background-color: green;
-  transition: width 0.2s ease-in-out;
-}
-
-.progress-text {
-  font-weight: 600;
-  margin-bottom: 1.2rem;
-}
-
-.loading-text {
-  display: flex;
-  gap: 3px;
-}
-
-.loading-text span {
-  font-size: 0.9rem;
-  color: #535353;
-  animation: wave 1.2s infinite ease-in-out;
-}
-
-@keyframes wave {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
+  20% {
+    transform: scaleY(1);
   }
 }
