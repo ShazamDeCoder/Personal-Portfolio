@@ -1,5 +1,7 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import profileImage from "../assets/profile1.png";
+import SectionWrapper from "./SectionWrapper";
+
 
 const Hero = () => {
   const scrollToSection = (href) => {
@@ -10,6 +12,7 @@ const Hero = () => {
   };
 
   return (
+    <SectionWrapper delay={0.2}>
     <section
       id="home"
       className="min-h-screen bg-black pt-16 flex items-center justify-center relative overflow-hidden "
@@ -81,6 +84,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </SectionWrapper>
   );
 };
 

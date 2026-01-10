@@ -1,5 +1,6 @@
 import { FiCode, FiZap, FiUsers } from "react-icons/fi";
 import { BsPalette } from "react-icons/bs";
+import SectionWrapper from "./SectionWrapper";
 
 const About = () => {
   const highlights = [
@@ -26,6 +27,7 @@ const About = () => {
   ];
 
   return (
+    <SectionWrapper delay={0.3}>
     <section id="about" className="py-20 px-6 bg-black">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -69,6 +71,7 @@ const About = () => {
         </div>
       </div>
     </section>
+    </SectionWrapper>
   );
 };
 
