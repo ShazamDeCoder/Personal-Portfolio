@@ -11,7 +11,7 @@ const Navigation = () => {
     { name: "Skills", href: "#skills", icon: Code },
     { name: "Projects", href: "#projects", icon: Folder },
     { name: "Contact", href: "#contact", icon: Mail },
-    { name: "Resume", href: "/resume.pdf", icon: FileText },
+    { name: "Resume", href: "/Resume.pdf", icon: FileText },
   ];
 
   useEffect(() => {

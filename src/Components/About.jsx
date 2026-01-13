@@ -35,7 +35,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-white max-w-4xl mx-auto leading-relaxed">
-            I'm Mubarak, a passionate <strong>Frontend Developer in Nigeria</strong> with 1+ years of experience building <strong>modern web applications</strong>. I specialize in <strong>React.js</strong> and love creating seamless user experiences that combine beautiful design with robust functionality.
+            I'm Mubarak, a passionate <strong>Frontend Developer in Nigeria</strong> with 2+ years of experience building <strong>modern web applications</strong>. I specialize in <strong>React.js</strong> and love creating seamless user experiences that combine beautiful design with robust functionality.
           </p>
         </div>
 
