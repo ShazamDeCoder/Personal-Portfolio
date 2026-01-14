@@ -12,12 +12,22 @@ const projects = [
   },
   {
     id: 2,
+    title: "Weather App",
+    description:
+      "A modern, responsive Weather App built with React and Tailwind CSS that allows users to search for any city worldwide and view current weather conditions.",
+    image:"https://res.cloudinary.com/dvxoylstd/image/upload/v1768390035/weather_iv4lqq.png" ,
+    technologies: ["React", "Vite", "Tailwind CSS", "OpenWeatherMap API", "React Icons"],
+    liveUrl: "https://weather-app-seven-red-77.vercel.app/",
+    githubUrl: "https://github.com/ShazamDeCoder/Weather-app",
+    featured: false,
+  },
+  {
+    id: 3,
     title: "Coffee Website",
     description:
       "A coffee website built with React. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard.",
     image:"https://res.cloudinary.com/dvxoylstd/image/upload/v1767837474/Capture_kqmcas.png" ,
-    technologies: ["React", "Vite", "Tailwind CSS"],
-    liveUrl: "https://espressio-coffee.vercel.app",
+    technologies: ["React", "Vite", "Tailwind CSS"],    liveUrl: "https://espressio-coffee.vercel.app",
     githubUrl: "https://github.com/ShazamDeCoder/Espressio-Coffee.git",
     featured: false,
   },
